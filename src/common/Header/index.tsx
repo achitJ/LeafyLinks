@@ -8,7 +8,7 @@ export default function Header() {
             <div className={styles.hdr852Container}>
                 <Link href="/">
                     <div className={styles.hdr852Logo}>
-                        <h1>Social Seedlings</h1>
+                        <h1>LeafyLinks</h1>
                     </div>
                 </Link>
 
