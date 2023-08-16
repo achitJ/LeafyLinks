@@ -1,0 +1,65 @@
+div>.post234Container {
+    min-width: 350px;
+}
+
+.post234Container {
+    margin: 20px auto 0 auto;
+    border: 1px solid var(--gray-170);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
+    background: var(--color-primary);
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    min-width: 350px;
+}
+
+.post234Header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.post234HeaderUserIconImg {
+    border-radius: 50%;
+}
+
+.post234UserName {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+
+.post234Location {
+    color: var(--location-text-color);
+    text-align: right;
+    width: 100%;
+}
+
+.post234DescriptionPara {
+    word-wrap: break-word;
+}
+
+.post234Description {
+    padding: 10px;
+}
+
+.post234LikesCount {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post234ActionIconsHolder {
+    padding: 10px;
+    display: flex;
+}
+
+@media only screen and (max-width: 450px) {
+    .post234Container {
+        border: 1px solid var(--gray-170);
+        border-left: none;
+        border-right: none;
+        /* border-radius: 10px; */
+    }
+}

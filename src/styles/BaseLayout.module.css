@@ -1,0 +1,12 @@
+.base734Main {
+    background-color: var(--color-secondary);
+    padding-top: 72px;
+    min-width: 350px;
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+    .base734Main {
+        padding-top: 48px;
+    }
+}

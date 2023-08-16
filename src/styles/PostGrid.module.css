@@ -1,0 +1,59 @@
+.postGrid367Container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 4.5rem;
+}
+
+/* Gallery Section */
+
+.postGrid367Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Loader */
+
+.postGrid367Loader {
+    width: 5rem;
+    height: 5rem;
+    border: 0.6rem solid var(--gray-170);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: loader 500ms linear infinite;
+}
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .postGrid367Container {
+        padding: 0 1rem;
+    }
+
+    .postGrid367Gallery {
+        margin: auto;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .postGrid367Container {
+        padding: 0 1rem;
+    }
+
+    .postGrid367Gallery {
+        margin: auto;
+        display: flex;
+    }
+}

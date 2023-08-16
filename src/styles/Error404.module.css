@@ -1,0 +1,32 @@
+.error404Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 99vh;
+    width: 100vw;
+}
+
+.error404Button {
+    margin: 24px;
+	padding: 12.5px 15px;
+	border: 0;
+	border-radius: 100px;
+	background-color: var(--color-text);
+	color: var(--color-primary);
+	font-weight: bold;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.error404Button:hover {
+	box-shadow: 0 0 20px var(--scroll-to-top-btn);
+	transform: scale(1.1);
+}
+
+.error404Button:active {
+	transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+	box-shadow: none;
+	transform: scale(0.98);
+}

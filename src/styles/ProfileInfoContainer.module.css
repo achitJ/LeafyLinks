@@ -1,0 +1,150 @@
+.profileInfo592Button {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Profile Section */
+
+.profileInfo592Container {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInfo592Container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.profileInfo592Img {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.profileInfo592Img img {
+    border-radius: 50%;
+}
+
+.profileInfo592Stats,
+.profileInfo592Bio {
+    float: left;
+    width: 100%;
+}
+
+.profileInfo592Stats ul {
+    display: flex;
+    justify-content: center;
+}
+
+.profileInfo592UserPicName {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.profileInfo592Username {
+    display: inline-block;
+    font-weight: 300;
+}
+
+.profileInfo592Stats {
+    margin-top: 2.3rem;
+}
+
+.profileInfo592Stats li {
+    display: inline-block;
+    line-height: 1.5;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.profileInfo592Stats li:last-of-type {
+    margin-right: 0;
+}
+
+.profileInfo592Bio {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 2.3rem;
+}
+
+.profileInfo592FullName,
+.profileInfo592StatCount,
+.profileInfo592EditProfileBtn {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+    .profileInfo592Container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+    }
+
+    .profileInfo592Container::after {
+        display: none;
+    }
+
+    .profileInfo592Img,
+    .profileInfo592UserPicName,
+    .profileInfo592Bio,
+    .profileInfo592Stats {
+        float: none;
+    }
+
+    .profileInfo592Img img {
+        width: 7.7rem;
+    }
+
+    .profileInfo592UserPicName {
+        flex-basis: calc(100% - 10.7rem);
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    .profileInfo592Bio {
+        margin-top: 1.5rem;
+        font-size: 12px;
+    }
+
+    .profileInfo592Bio,
+    .profileInfo592Stats {
+        flex-basis: 100%;
+    }
+
+    .profileInfo592Stats {
+        order: 1;
+        margin-top: 1.5rem;
+    }
+
+    .profileInfo592Stats ul {
+        font-size: 14px;
+        display: flex;
+        text-align: center;
+        padding: 1rem 0;
+        border-top: 0.1rem solid var(--gray-170);
+        border-bottom: 0.1rem solid var(--gray-170);
+    }
+
+    .profileInfo592Stats li {
+        flex: 1;
+        margin: 0;
+    }
+
+    .profileInfo592StatCount {
+        display: block;
+    }
+}

@@ -1,0 +1,64 @@
+.sttb387ButtonContainer {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 50;
+}
+
+.sttb387Button {
+	width: 45px;
+	height: 45px;
+	background: var(--scroll-to-top-btn);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	border: none;
+}
+
+.sttb387ArrowSymbol path {
+	fill: var(--color-primary);
+}
+
+.sttb387Tooltip {
+	font-size: 0.7em;
+	width: 100px;
+	position: absolute;
+	color: var(--color-text);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: -18px;
+	opacity: 0;
+	transition-duration: 0.7s;
+}
+
+.sttb387Button:hover .sttb387Tooltip {
+	opacity: 1;
+	transition-duration: 0.7s;
+}
+
+.sttb387Button:hover .sttb387ArrowSymbol {
+	animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media only screen and (max-width: 540px) {
+    .sttb387ButtonContainer {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@keyframes slide-in-bottom {
+	0% {
+		transform: translateY(10px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

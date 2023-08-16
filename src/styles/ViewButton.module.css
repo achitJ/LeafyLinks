@@ -1,0 +1,60 @@
+.vtb932Container {
+    padding: 6px 12px 6px 8px;
+    /* margin: 0 15px; */
+    width: 64%;
+    min-width: 85px;
+    max-width: 85px;
+    display: flex;
+    justify-content: space-evenly;
+    outline: none;
+    position: relative;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--color-text);
+    cursor: pointer;
+    transform: scale(var(--scale, 1)) translateZ(0);
+    transition: transform 0.15s, background 0.4s;
+}
+
+.vtb932Container:active {
+    --scale: .95;
+}
+
+.vtb932Container .vtb932Icon {
+    color: var(--color-primary);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vtb932Container .vtb932Icon i {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    display: block;
+    border-radius: 2px;
+    width: 7px;
+    height: 7px;
+    background: var(--color-primary);
+}
+
+.vtb932Container .vtb932ButtonText {
+    margin-left: 4px;
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 28px;
+    color: var(--color-primary);
+}
+
+.vtb932Container .vtb932ButtonText span {
+    display: block;
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+    -webkit-animation: none 0.4s ease forwards;
+    animation: none 0.4s ease forwards;
+}
