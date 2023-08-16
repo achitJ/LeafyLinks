@@ -21,19 +21,21 @@ export default function PostImage({ post }: IPostImageProps) {
                     zIndex: isImageLoaded ? 1 : -1,
                 }}
             />
-            {<Blurhash
-                hash={post.blurHash}
-                style={{
-                    height: "100%",
-                    width: "100%",
-                    objectFit: "cover",
-                    opacity: isImageLoaded ? 0.5 : 1,
-                    transition: "opacity 0.3s ease-in-out",
-                }}
-                resolutionX={32}
-                resolutionY={32}
-                punch={1}
-            />}
+            {
+                <Blurhash
+                    hash={post.blurHash ?? "LEHV6nWB2yk8pyo0adR*.7kCMdnj"}
+                    style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "cover",
+                        opacity: isImageLoaded ? 0.5 : 1,
+                        transition: "opacity 0.3s ease-in-out",
+                    }}
+                    resolutionX={32}
+                    resolutionY={32}
+                    punch={1}
+                />
+            }
         </>
     )
 }
