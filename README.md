@@ -46,6 +46,3 @@ npm run dev
 - **Dark/Light Mode**: The application supports both dark and light modes, allowing users to switch between themes according to their preference.
 - **Scroll to Top Button**: A scroll-to-top button is implemented to allow users to easily return to the top of the page with a single click.
 - **Custom Hook for Infinite Scroll**: The project includes a custom hook for infinite scroll functionality, ensuring a smooth and efficient scrolling experience while browsing the News Feed.
-
-## Folder Structure
-The project follows a standard and well-defined folder structure to organize its components, styles, hooks, and other assets. The structure is as follows:
